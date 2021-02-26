@@ -7,10 +7,12 @@ tar -czvf payloads.tar.gz \
 ./fileMerge.py
 #
 # [Artifact-Creation]
+echo payloads.tar.gz > payloads
+
 mender-artifact write module-image \
  -T script \
  --device-type raspberrypi3
  -o fileMerge.artifact
  -n fileMerger-1.0 \
- -f ./payloads.tar.gz
+ -f payloads
  -s ArtifactInstall_Enter_01_MergeFilesContents.sh
