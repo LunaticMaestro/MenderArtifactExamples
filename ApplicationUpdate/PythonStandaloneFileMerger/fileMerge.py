@@ -1,4 +1,4 @@
-#!bin/python3
+#!/usr/bin/python3
 #
 # Program to concatenate contents of `file1` & `file2`
 # filenames and out files are supplies on cli
