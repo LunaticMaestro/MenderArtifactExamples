@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit_Web_Interface
+After=multi-user.target
+Conflicts=getty@tty.service
+
+[Service]
+Type=simple
+ExecStart=streamlit /usr/bin/st_web_interface/st_web_interface/__main__.py
+StandardInput==tty-force
+
+[Install]
+WantedBy=multi-user.target

@@ -6,7 +6,7 @@ tar -czvf payloadsFileMerge.tar.gz \
 ./file2.txt \
 ./fileMerge.py
 #
-echo ~/Downloads > dest_dir
+echo /usr/bin > dest_dir
 echo payloadsFileMerge.tar.gz > filename
 
 # [Artifact-Creation]
@@ -14,8 +14,8 @@ mender-artifact write module-image \
  -T single-file \
  --device-type raspberrypi3\
  -o fileMergePayloads.mender \
- -n FileMerge-1.0 \
- --software-name FileMerge \# name of the thing
+ -n FileMergeZipped-1.0 \
+ --software-name FileMergeZipped \# name of the thing
  --software-version 1.0 \
  -f dest_dir \
  -f filename \

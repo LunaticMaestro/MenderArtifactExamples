@@ -2,13 +2,16 @@
 #
 
 #[Check] payload directory exists with file
-mkdir -p ~/fileMerge
+mkdir -p /usr/bin/fileMerge
 
 #[Uncompress Payloads]
-tar -xzvf ~/Downloads/payloadsFileMerge.tar.gz -C ~/fileMerge
+tar -xzvf /usr/bin/payloadsFileMerge.tar.gz -C /usr/bin/fileMerge/
 
 #[Remove Payloads]
-rm ~/Downloads.tar.gz
+rm /usr/bin/payloadsFileMerge.tar.gz
 
 #[Execute] Run the python script
-python3 ~/fileMerge/fileMerge.py file1.txt file2.txt merged_file.txt
+python3 /usr/bin/fileMerge/fileMerge.py \
+ /usr/bin/filMerge/file1.txt \
+ /usr/bin/filMerge/file2.txt \
+ /usr/bin/filMerge/merged_file.txt
