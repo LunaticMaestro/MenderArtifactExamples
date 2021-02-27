@@ -1,0 +1,3 @@
+[console_scripts]
+webdashboard = WebDashboard.__main__:main
+
