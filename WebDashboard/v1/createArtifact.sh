@@ -14,8 +14,8 @@ mender-artifact write module-image \
  --device-type raspberrypi3\
  -o pkg_WebDashboard_v1.mender \ # Change this
  -n FileMergeZipped-1.0 \
- --software-name webdashboard \# name of the thing
- --software-version 1.0 \
+ --software-name webdashboard \ # name of the thing
+  --software-version 1.0 \
  -f dest_dir \
  -f filename \
  -f ./WebDashboard/dist/WebDashboard-1.0.tar #Change this
