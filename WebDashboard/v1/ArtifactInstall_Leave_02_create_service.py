@@ -28,9 +28,8 @@ else:
     sys.exit()
 
 serviceName = 'webdashboard'
-tmpFileLocation = '/var/local/
-fullFilePath_ext = tmpFileLocation+serviceName+'.service', 'w'
+tmpFileLocation = '/var/local/'
+fullFilePath_ext = tmpFileLocation+serviceName+'.service'
 
-
-with open() as file:
+with open(fullFilePath_ext, 'w') as file:
 	file.write(serviceWork)
