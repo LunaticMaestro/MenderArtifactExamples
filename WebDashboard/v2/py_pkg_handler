@@ -1,4 +1,3 @@
-cat << "EOF" > py_pkg
 #!/bin/bash
 
 set -e 
