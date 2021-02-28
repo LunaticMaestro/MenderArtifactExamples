@@ -27,6 +27,6 @@ mender-artifact write module-image \
  --device-type raspberrypi3 \
  -o fileMerge.mender \ # Change this
  -n WebDashboardSetup-1.0 \
- -s ArtifactInstall_Enter_01_Install_py_pkg.sh
- -s ArtifactInstall_Leave_02_create_service.py
- -s ArtifactInstall_Enter_03_enable_service.sh
+ -s ArtifactInstall_Enter_01_Install_py_pkg.sh \
+ -s ArtifactInstall_Leave_02_create_service.py \
+ -s ArtifactInstall_Enter_03_enable_service.sh 
