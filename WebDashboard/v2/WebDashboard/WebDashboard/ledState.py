@@ -3,9 +3,11 @@
 # The state is controled by the button on webdashboard http://localhost:8050
 
 def updateLedInventory(state):
-	data = '''\
-echo "Yas"
+	status='ON' if state else 'OFF'
+	data = f'''#!/bin/sh\
+echo led_status=f{status}
 '''
-	pathToInventoryFile = '' TODO 
+	pathToInventoryFile = \
+'/usr/share/mender/inventory/mender-inventory-custom-led'
 	with open(pathToInventoryFile, 'w') as file:
 		file.write(data) 
