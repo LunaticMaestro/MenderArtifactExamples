@@ -1,0 +1,16 @@
+cat << "EOF" > py_pkg
+#!/bin/bash
+
+set -e 
+
+STATE="$1"
+FILES="$2"
+
+case "$STATE" in
+	ArtifactInstall)
+		mkdir -p /var/local/
+		cp "$FILES"/files/* /var/local/
+		;;
+esac
+exit 0
+EOF

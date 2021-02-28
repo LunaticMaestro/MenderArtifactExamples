@@ -1,17 +1,14 @@
 Metadata-Version: 2.1
 Name: WebDashboard
-Version: 1.0
+Version: 2.0
 Summary: Creates a dashboard on broser
 Home-page: https://github.com/realpython/reader
 Author: LunaticMaestro
 Author-email: deepak@iiitkalyani.ac.in
 License: MIT
-Description: # v1 Tasks
-         - Create a Dash app in python
-         - Wrap the app as pyhton package and deploy as single file
-         - Create the state-scripts 
-           - to install the previous deploy package
-           - Make the package run as service in ubuntu
+Description: # v2 Tasks
+         - Create interactive browers based button
+         - Change inventory variable on button press
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3

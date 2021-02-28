@@ -11,7 +11,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div(children=[
     html.H1(children="Internship assignment"),
     html.Div(children='''
-Hi There employee, we will change this page with next update of the app using mender.
+Click the button, to change state of your LED. View the same over mender site in device's inventory variables.
 '''),
 
     daq.PowerButton(
@@ -20,7 +20,7 @@ Hi There employee, we will change this page with next update of the app using me
         size=100,
         color='#FF5E5E'
     ),
-    html.Div(id='power-button-output')
+    html.Div(id='power-button-output', children='LED: ON')
  ])
 
 
