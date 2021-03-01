@@ -7,7 +7,7 @@ import subprocess
 serviceWork = \
 '''
 [Unit]
-Description=webdashboard
+Description=webdashboard-1.0
 After=multi-user.target
 Conflicts=getty@tty.service
 

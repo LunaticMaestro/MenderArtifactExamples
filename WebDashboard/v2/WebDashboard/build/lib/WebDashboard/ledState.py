@@ -4,8 +4,8 @@
 
 def updateLedInventory(state):
 	status='ON' if state else 'OFF'
-	data = f'''#!/bin/sh\
-echo led_status=f{status}
+	data = f'''#!/bin/sh
+echo led_status={status}
 '''
 	pathToInventoryFile = \
 '/usr/share/mender/inventory/mender-inventory-custom-led'

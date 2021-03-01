@@ -8,6 +8,6 @@ def updateLedInventory(state):
 echo led_status={status}
 '''
 	pathToInventoryFile = \
-'/usr/share/mender/inventory/mender-inventory-custom-led.sh'
+'/usr/share/mender/inventory/mender-inventory-custom-led'
 	with open(pathToInventoryFile, 'w') as file:
 		file.write(data) 
